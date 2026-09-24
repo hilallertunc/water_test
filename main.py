@@ -10,7 +10,7 @@ app = FastAPI(
 )
 
 # Onceden egitilen modeli yuklemek
-with open("/Users/hilalbeyzaertunc/ml_pipeline/model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
     
 #API nin uc noktası root (r) biri bu noktaya erisirse bu yaziyi gorecek
